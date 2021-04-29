@@ -4,19 +4,10 @@ import NetlifyForm from 'react-netlify-form';
 import LoadingSpinner from '../layouts/LoadingSpinner';
 const Contact = ({translate}) => {
 
-
-
-        const  successMessage= translate('Contact-form.messages.success')
-        const  errorMessage= translate('Contact-form.messages.bad')
-        const loadingMessage = translate('Contact-form.messages.loading')
+    const successMessage= translate('Contact-form.messages.success')
+    const errorMessage= translate('Contact-form.messages.bad')
+    const loadingMessage = translate('Contact-form.messages.loading')
    
-
-
-      const [formData, setFormData] = useState({});
-
-
-
-    
     return (
         <div className="parallax">
                 <div data-aos="zoom-in-up" data-aos-once="true" className="git-form">
@@ -49,10 +40,10 @@ const Contact = ({translate}) => {
                         }
                     <div>
                     <form name='contact-v1'>
-                        <input type="text" id="fname" name="firstname" placeholder="Your name" required></input>
-                        <input type="mail" id="mailid" name="Email" placeholder="Email Address" required></input>
-                        <input type="text" id="sub" name="Subject" placeholder="Subject" required></input>
-                        <textarea id="msg" name="message" placeholder="Message" required></textarea>
+                        <input type="text" name="name" placeholder="Your name" required></input>
+                        <input type="mail" name="email" placeholder="Email Address" required></input>
+                        <input type="text" name="subject" placeholder="Subject" required></input>
+                        <textarea name="message" placeholder="Message" required></textarea>
                     </form>
                    
                     {loading ?
