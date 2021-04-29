@@ -5,6 +5,40 @@
         "en":"English"
     },
     "intro":{
-        "name":"Hello, I'm Lucas Fradusco"
+        "name":"Hi, I'm Lucas Fradusco",
+        "porfolioln1" : "and this is my ",
+        "porfolioln2" : "portfolio...",
+        "mywork":"Take a look at my work!"
+    },
+    "about":{
+        "me":"About Me",
+        "paragraph": "Software Engineer who loves to transform ideas into reality using code. I am passionate about using Javascript and Animation Libraries to create awesome user experiences. With over five years of experience developing web applications using the latest front-end and UI/UX development Technologies. Motivated designer and developer with experience creating custom websites with ReactJs, JavaScript, HTML5, and CSS3. Strong collaboration skills and proven history of application development."
+    },
+    "projects":{
+        "past":"Past Projects"
+    },
+    "Contact-form":{
+        "title": "Lets get in touch",
+        "placeholders":{
+            "placeholder-name":"Write here your Name",
+            "placeholder-last-name":"Write here your Last Name",
+            "placeholder-email":"Write here your Email",
+            "placeholder-message":"Write here your Message"
+        },"labels":{
+            "name":"name",
+            "subject":"subject",
+            "email":"email",
+            "message":"message"
+        },"messages":{
+            "success" : "Thank you for contacting us, we will contact you shortly",
+            "bad" : "Please complete all the fields before sending the message!",
+            "loading" :"Loading the form..."
+        },"buttons":{
+            "send":"Send",
+            "sending":"Sending"
+        },"downme":{
+            "down":"GET THE APP NOW!"
+        }
+        
     }
 }

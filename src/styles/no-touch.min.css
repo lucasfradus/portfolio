@@ -86,7 +86,7 @@ button:focus {
   width: 70%;
   background: #fff;
   padding: 5%;
-  margin: 10% auto;
+  margin: 0 auto;
   border-bottom: solid 1px #777 !important;
 }
 
@@ -173,7 +173,7 @@ button:focus {
 
 .third {
   width: 75%;
-  margin: 10% auto;
+  margin: 0 auto;
   align-items: center;
   padding: 3%;
   justify-content: center;
@@ -323,7 +323,7 @@ textarea:focus {
 }
 
 .half form {
-  padding: 3rem 1rem;
+  padding: 1rem 1rem;
 }
 
 .half p {

@@ -43,9 +43,6 @@ const skillsBar = [
         name: "Python",
         faClass: "fab fa-python"
     },{
-        name: "Java",
-        faClass: "fab fa-java"
-    },{
         name: "PHP",
         faClass: "fab fa-php"
     },{
@@ -55,17 +52,11 @@ const skillsBar = [
         name: "AWS",
         faClass: "fab fa-aws"
     },{
-        name: "Docker",
-        faClass: "fab fa-docker"
-    },{
         name: "NPM",
         faClass: "fab fa-npm"
     },{
         name: "Heroku",
         faClass: "fas fa-h-square"
-    },{
-        name: "Swift",
-        faClass: "fab fa-swift"
     },{
         name: "Linux",
         faClass: "fab fa-linux"
@@ -82,30 +73,30 @@ const projects = [
     {
         // Add image in './styles/images.css' in #project1
         id: "project1",
-        name: "Project 1",
-        skills: ["HTML, CSS, JS"],
-        url: "https://github.com/kaustubhai"
+        name: "Vinimay App",
+        skills: ["React, Redux, CSS"],
+        url: "https://www.vinimayapp.com/"
     },
     {
         // Add image in './styles/images.css' in #project2
         id: "project2",
-        name: "Project 2",
-        skills: ["HTML, CSS, JS"],
-        url: "https://github.com/kaustubhai"
+        name: "TwentyTwo",
+        skills: ["Wordpress, PHP, CSS"],
+        url: "https://twentytwo.com.ar/"
     },
     {
         // Add image in './styles/images.css' in #project3
         id: "project3",
-        name: "Project 3",
-        skills: ["HTML, CSS, JS"],
-        url: "https://github.com/kaustubhai"
+        name: "Pope Cerveceria",
+        skills: ["PHP, CSS, JS"],
+        url: "https://popecerveceria.com/"
     },
     {
         // Add image in './styles/images.css' in #project4
         id: "project4",
-        name: "Project 4",
-        skills: ["HTML, CSS, JS"],
-        url: "https://github.com/kaustubhai"
+        name: "Fazio Deco",
+        skills: ["Wordpress, PHP, CSS"],
+        url: "http://faziodeco.com.ar/"
     },
     {
         // Add image in './styles/images.css' in #project5
@@ -158,11 +149,8 @@ const contact = {
 // Paste your respective social media links. You can omit any if you dont have it
 // Upload your resume in your drive, get the shaareable link and paste it in the resume section
 const social = {
-    github: 'https://github.com',
-    facebook: 'https://facebook.com',
-    linkedin: 'https://linkedin.com',
-    instagram: 'https://instagram.com',
-    resume: 'https://novoresume.com/'
+    github: 'https://github.com/lucasfradus',
+    linkedin: 'https://www.linkedin.com/in/lucas-fradusco-3161a848/',
 }
 // Dont change anything here
 export { animation, header, background, about, skillsBar, projects, miscellaneous, contact, social, section2title, section3Title, section4Title, section5Title }

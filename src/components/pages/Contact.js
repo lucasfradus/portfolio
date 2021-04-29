@@ -1,26 +1,71 @@
-import React from 'react'
-import { contact, section5Title, social } from '../../profile'
+import {React,useState} from 'react'
+import { contact,  social } from '../../profile'
+import NetlifyForm from 'react-netlify-form';
+import LoadingSpinner from '../layouts/LoadingSpinner';
+const Contact = ({translate}) => {
 
-const Contact = () => {
+
+
+        const  successMessage= translate('Contact-form.messages.success')
+        const  errorMessage= translate('Contact-form.messages.bad')
+        const loadingMessage = translate('Contact-form.messages.loading')
+   
+
+
+      const [formData, setFormData] = useState({});
+
+
+
     
     return (
         <div className="parallax">
                 <div data-aos="zoom-in-up" data-aos-once="true" className="git-form">
                     <>
                 <div className="git-head-div text-center mx-auto">
-                        <h1 id="Contact" className="git-head">{section5Title}</h1>
+                        <h1 id="Contact" className="git-head">{translate('Contact-form.title')}</h1>
                 </div>
                 </>
                 <div className="container">
             <div className="git-cont row">
                 <div className="col-12 col-sm-6 half">
-                    <form action={contact.contactUrl ? contact.contactUrl : "https://formspree.io"} method={contact.contactUrl ? "POST" : "GET"}>
+            
+                <NetlifyForm name='contact-v1'>
+                {({ loading, error, success }) => (
+                    <div>
+                        {loading &&
+                            <div className="alert info">
+                                {loadingMessage}
+                            </div>
+                        }
+                        {error &&
+                            <div className="alert danger">
+                                {errorMessage}            
+                            </div>
+                        }
+                        {success &&
+                            <div className="alert success">
+                                {successMessage}
+                            </div>
+                        }
+                    <div>
+                    <form name='contact-v1'>
                         <input type="text" id="fname" name="firstname" placeholder="Your name" required></input>
                         <input type="mail" id="mailid" name="Email" placeholder="Email Address" required></input>
                         <input type="text" id="sub" name="Subject" placeholder="Subject" required></input>
                         <textarea id="msg" name="message" placeholder="Message" required></textarea>
-                        <button style={{cursor: 'pointer'}} type="submit"><label style={{cursor: 'pointer'}} id="not-dark">Send Message</label></button>
                     </form>
+                   
+                    {loading ?
+                        <LoadingSpinner translate={translate} /> :
+                        <button type="submit"  className='btn'>{translate('Contact-form.buttons.send')}  </button>
+                    }
+
+                </div>
+                
+                </div>
+                )}
+                </NetlifyForm>
+
                 </div>
                 <div className="col-12 col-sm-6 half">
                     <p className="lead">

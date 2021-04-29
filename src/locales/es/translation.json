@@ -4,6 +4,39 @@
         "en":"Ingles"
     },
     "intro":{
-        "name":"Hola, Soy Lucas Fradusco"
+        "name":"Hola, Soy Lucas Fradusco",
+        "porfolioln1" : "y este es mi ",
+        "porfolioln2" : "portfolio...",
+        "mywork":"Mira mis trabajos!"
+    }, 
+     "about":{
+        "me":"Sobre mi",
+        "paragraph": "Soy un Ingeniero en informática al que le encanta transformar ideas en realidad utilizando código. Me apasiona el uso de JavaScript y las bibliotecas de animación para crear experiencias de usuario increíbles. Con más de cinco años de experiencia en el desarrollo de aplicaciones web utilizando las últimas tecnologías de desarrollo front-end y UI / UX. Diseñador y desarrollador motivado con experiencia en la creación de sitios web personalizados con ReactJs, JavaScript, HTML5 y CSS3. Fuertes habilidades de colaboración e historial comprobado de desarrollo de aplicaciones."
+    },
+    "projects":{
+        "past":"Algunos de mis proyectos"
+    },"Contact-form":{
+        "title": "Dejame tu mensaje!",
+
+        "placeholders":{
+            "placeholder-name":"Escribí aca tu nombre",
+            "placeholder-last-name":"Escribí aca tu apellido",
+            "placeholder-email":"Escribí aca tu email",
+            "placeholder-message":"Escribí aca tu mensaje"
+        },"labels":{
+            "name":"Nombre",
+            "surname":"Apellido",
+            "email":"Email",
+            "message":"Mensaje"
+        },"messages":{
+            "success" : "Gracias por ponerte en contacto con nosotros, nos comunicaremos a la brevedad",
+            "bad" : "Por favor completa todos los campos antes de enviar el mensaje!",
+            "loading" :"Cargando el formulario..."
+        },"buttons":{
+            "send":"Enviar",
+            "sending":"Enviando"
+        },"downme":{
+            "down":"¡BAJATE LA APP!"
+        }
     }
 }

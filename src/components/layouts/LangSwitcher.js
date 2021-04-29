@@ -5,7 +5,7 @@ import React, { useState } from 'react'
 
 
 const LangSwitcher = () => {
-    const [t, i18n] = useTranslation('common');
+    const [t,i18n] = useTranslation('common');
 
     const flag_es = "https://cdn2.iconfinder.com/data/icons/world-flag-icons/128/Flag_of_Spain.png"
     const flag_en = "https://cdn2.iconfinder.com/data/icons/world-flag-icons/128/Flag_of_United_Kingdom.png"

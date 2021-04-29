@@ -5,3 +5,22 @@
   --primary-color: #341586;
   --hover-color: #3315869f;
 }
+
+.alert {
+  border-radius: 15px;
+  border: 1px solid black;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+}
+
+.info {
+  background: #2196f3;
+}
+.success {
+  background: #04aa6d;
+}
+
+.danger {
+  background: #f44336;
+}

@@ -1,11 +1,11 @@
 import React from 'react'
 
-const HeaderButton = () => {
+const HeaderButton = ({translate}) => {
 
     return (
         <>
             <div className="mx-auto">
-                <a href="#Projects"><button className="see">Mira mis trabajos!<i className="fas fa-eye"></i></button></a>
+                <a href="#Projects"><button className="see">{translate('intro.mywork')} <i className="fas fa-eye"></i></button></a>
             </div>
         </>
     )

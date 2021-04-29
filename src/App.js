@@ -7,6 +7,7 @@ import Contact from './components/pages/Contact'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { animation } from './profile'
+import {useTranslation} from "react-i18next";
 
 
 function App() {
@@ -19,16 +20,16 @@ function App() {
       })
 // eslint-disable-next-line
   }, [])
+  const [t] = useTranslation('common');
 
-  
 
   return (
     <div className="App">
-      <Header />
-      <Particles />
-      <About />
-      <Works />
-      <Contact />
+      <Header translate={t} />
+      <Particles/>
+      <About translate={t}/>
+      <Works translate={t} />
+      <Contact translate={t}/>
     </div>
   );
 }
