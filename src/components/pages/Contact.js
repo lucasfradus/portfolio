@@ -39,11 +39,11 @@ const Contact = ({translate}) => {
                             </div>
                         }
                     <div>
-                    <form name='contact-v1'>
-                        <input type="text" name="name" placeholder="Your name" required></input>
-                        <input type="mail" name="email" placeholder="Email Address" required></input>
-                        <input type="text" name="subject" placeholder="Subject" required></input>
-                        <textarea name="message" placeholder="Message" required></textarea>
+                    <form name='contact-v2'>
+                        <input type="text" name="nombre" placeholder="Your name" required></input>
+                        <input type="mail" name="mail" placeholder="Email Address" required></input>
+                        <input type="text" name="asunto" placeholder="Subject" required></input>
+                        <textarea name="mensaje" placeholder="Message" required></textarea>
                     </form>
                    
                     {loading ?
